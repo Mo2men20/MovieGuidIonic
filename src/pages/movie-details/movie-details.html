@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Movie Information</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card color="light">
+
+    <img src="{{movie.Poster}}" />
+
+    <ion-card-content>
+      <ion-card-title>
+        {{movie.Title}}
+      </ion-card-title>
+      <p>
+        {{movie.Plot}}
+      </p>
+
+      <hr>
+
+      <p>
+        {{movie.Awards}}
+      </p>
+
+      <hr>
+
+      <p>{{movie.Actors}}</p>
+
+      <hr>
+      
+      <ion-item color="light">
+        Genre
+        <ion-badge item-right>{{movie.Genre}}</ion-badge>
+      </ion-item>
+
+
+      <ion-item color="light">
+        Released
+        <ion-badge item-right>{{movie.Released}}</ion-badge>
+      </ion-item>
+
+
+      <ion-item color="light">
+        <ion-icon name="thumbs-up" item-left></ion-icon>
+        Rating
+        <ion-badge item-right>{{movie.imdbRating}}/10</ion-badge>
+      </ion-item>
+
+
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
